@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/journal_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/journal_title"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/journal_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/journal_description"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/journal_title"
+        app:layout_constraintTop_toBottomOf="@+id/journal_title" />
+
+    <!-- Expand Button ImageView -->
+    <ImageView
+        android:id="@+id/expand_button"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/expand_content"
+        android:src="@drawable/ic_expand"
+        app:layout_constraintStart_toEndOf="@+id/journal_description"
+        app:layout_constraintTop_toTopOf="@+id/journal_description"
+        android:visibility="visible" />
+
+    <!-- Collapse Button ImageView -->
+    <ImageView
+        android:id="@+id/collapse_button"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/collapse_content"
+        android:src="@drawable/ic_collapse"
+        app:layout_constraintStart_toEndOf="@+id/journal_description"
+        app:layout_constraintTop_toTopOf="@+id/journal_description"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/place_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/place_name"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/journal_description"
+        app:layout_constraintTop_toBottomOf="@+id/journal_description" />
+
+    <Button
+        android:id="@+id/share_button"
+        android:layout_width="151dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#964B00"
+        android:text="@string/share_experience"
+        android:textSize="13sp"
+        tools:ignore="ContentDescription,MissingConstraints"
+        tools:layout_editor_absoluteX="201dp"
+        tools:layout_editor_absoluteY="86dp" />
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/image2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/place_name"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/image3"
+        app:layout_constraintStart_toEndOf="@+id/image1"
+        app:layout_constraintTop_toTopOf="@+id/image1"
+        tools:ignore="ContentDescription"/>
+
+    <ImageView
+        android:id="@+id/image3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image2"
+        app:layout_constraintTop_toTopOf="@+id/image1"
+        tools:ignore="ContentDescription" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

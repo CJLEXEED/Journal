@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/values/colors.xml -->
+<resources>
+    <!-- Primary colors -->
+    <color name="colorPrimary">#6200EE</color> <!-- Deep purple -->
+    <color name="colorPrimaryVariant">#3700B3</color> <!-- Darker shade -->
+    <color name="colorOnPrimary">#FFFFFF</color> <!-- White, for text on primary -->
+
+    <!-- Secondary colors -->
+    <color name="colorSecondary">#03DAC5</color> <!-- Teal -->
+    <color name="colorSecondaryVariant">#018786</color> <!-- Darker teal -->
+    <color name="colorOnSecondary">#000000</color> <!-- Black, for text on secondary -->
+
+    <!-- Background colors -->
+    <color name="colorBackground">#FFFFFF</color> <!-- White background -->
+    <color name="colorOnBackground">#000000</color> <!-- Black, for text on background -->
+
+    <!-- Surface colors (for cards and dialogs) -->
+    <color name="colorSurface">#FFFFFF</color>
+    <color name="colorOnSurface">#000000</color>
+
+    <!-- Error color -->
+    <color name="colorError">#B00020</color>
+    <color name="colorOnError">#FFFFFF</color>
+</resources>

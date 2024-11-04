@@ -1,0 +1,14 @@
+<resources>
+    <!-- Main Screen Strings -->
+    <string name="app_name">Journal</string>
+    <string name="journal_title">My Journal</string>
+    <string name="journal_description">How to log your memories of your visited places.</string>
+    <string name="place_name">Place Name</string>
+
+    <!-- Expand/Collapse Button Descriptions -->
+    <string name="expand_content">Expand to see more</string>
+    <string name="collapse_content">Collapse to see less</string>
+
+    <!-- Share Button Text -->
+    <string name="share_experience">Share this experience</string>
+</resources>
